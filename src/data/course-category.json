@@ -1,0 +1,18 @@
+[
+	{
+		"label": "Basic Music Theory",
+		"href": "/basic-music-theory"
+	},
+	{
+		"label": "Classical Composition",
+		"href": "/classical-composition"
+	},
+	{
+		"label": "Songwriting",
+		"href": "/"
+	},
+	{
+		"label": "Advance Music Composition",
+		"href": "/basic-music-theory"
+	}
+]
