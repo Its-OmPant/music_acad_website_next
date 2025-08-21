@@ -1,3 +1,4 @@
+import FeaturedCourses from "@/components/FeaturedCourses";
 import HeroSection from "@/components/HeroSection";
 import { Spotlight } from "@/components/ui/spotlight-new";
 import { SP } from "next/dist/shared/lib/utils";
@@ -7,6 +8,8 @@ export default function Home() {
 		<main className="w-full h-screen relative overflow-x-hidden">
 			<Spotlight />
 			<HeroSection />
+			<FeaturedCourses />
+			<div className="h-80"></div>
 		</main>
 	);
 }

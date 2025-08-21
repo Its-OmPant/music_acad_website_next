@@ -4,7 +4,7 @@ import Logo from "./Logo";
 
 export default function HeroSection() {
 	return (
-		<div className="w-full h-full flex flex-col gap-2 justify-center items-center">
+		<div className="w-full min-h-full flex flex-col py-6 gap-2 justify-center items-center">
 			<div className="w-full h-10"></div>
 			<h3 className="flex items-center gap-2 text-slate-200 md:text-xl lg:text-2xl">
 				We&apos;re <Logo />
