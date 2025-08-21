@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 export default function Instructors() {
 	return (
-		<div className="relative flex h-[50rem] w-full items-center justify-center bg-white dark:bg-black">
+		<div className="relative flex w-full items-center justify-center bg-white dark:bg-black">
 			<div
 				className={cn(
 					"absolute inset-0",
@@ -42,7 +42,7 @@ export default function Instructors() {
 						}))}
 					/>
 				</div>
-				<div className="mx-4 text-center md:mt-8 px-2">
+				<div className="mx-4 text-center md:mt-8 px-2 z-30">
 					<p className="text-md md:w-sm">
 						At our music school, students thrive under the guidance
 						of top-notch faculty, blending expertise, passion, and

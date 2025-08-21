@@ -7,7 +7,7 @@ import Webinars from "@/components/Webinars";
 
 export default function Home() {
 	return (
-		<main className="w-full h-screen relative overflow-x-hidden">
+		<main className="w-full relative overflow-x-hidden">
 			<Spotlight />
 			<HeroSection />
 			<FeaturedCourses />

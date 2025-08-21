@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
 	title: "Music Academy",
@@ -15,11 +16,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className="dark h-full">
-			<body className="h-full w-full bg-white text-black dark:bg-black dark:text-white antialiased overflow-hidden">
+			<body className="h-full w-full bg-white text-black dark:bg-black dark:text-white antialiased">
 				<div className="relative overflow-x-hidden">
 					<Navbar className="" />
 				</div>
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);
