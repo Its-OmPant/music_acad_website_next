@@ -1,5 +1,6 @@
 import FeaturedCourses from "@/components/FeaturedCourses";
 import HeroSection from "@/components/HeroSection";
+import Instructors from "@/components/Instructors";
 import Testimonials from "@/components/Testimonials";
 import { Spotlight } from "@/components/ui/spotlight-new";
 import Webinars from "@/components/Webinars";
@@ -12,7 +13,7 @@ export default function Home() {
 			<FeaturedCourses />
 			<Testimonials />
 			<Webinars />
-			<div className="h-80"></div>
+			<Instructors />
 		</main>
 	);
 }

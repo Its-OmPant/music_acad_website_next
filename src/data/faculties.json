@@ -1,0 +1,33 @@
+[
+	{
+		"name": "Arjun Mehra",
+		"subjectTeaches": "Classical Guitar",
+		"wordForStudent": "Consistency is the bridge between practice and mastery; every note you play today brings you one step closer to becoming the musician you dream of tomorrow.",
+		"image": "/images/faculties/f1.avif"
+	},
+
+	{
+		"name": "Meera Nair",
+		"subjectTeaches": "Violin",
+		"wordForStudent": "The violin may seem demanding at first, but with steady practice, mindful posture, and true dedication, it will eventually sing with the beauty of your heart.",
+		"image": "/images/faculties/f2.avif"
+	},
+	{
+		"name": "Ravi Sharma",
+		"subjectTeaches": "Tabla",
+		"wordForStudent": "Rhythm is not just about speed or power; it is about listening deeply, respecting silence, and allowing each beat to tell its own unique story to the listener.",
+		"image": "/images/faculties/f3.avif"
+	},
+	{
+		"name": "Daniel Roy",
+		"subjectTeaches": "Western Piano",
+		"wordForStudent": "The piano is an orchestra in itself; when you approach it with discipline, patience, and creativity, you discover endless possibilities hidden in its eighty-eight keys.",
+		"image": "/images/faculties/f4.avif"
+	},
+	{
+		"name": "Imran Khan",
+		"subjectTeaches": "Vocal Training",
+		"wordForStudent": "Your voice is your soul’s reflection; train it with love, breathe with awareness, and remember that emotion often carries more power than perfect technique alone.",
+		"image": "/images/faculties/f5.avif"
+	}
+]
