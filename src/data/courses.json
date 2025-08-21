@@ -17,7 +17,7 @@
 		"price": 109.99,
 		"instructor": "Jane Smith",
 		"isFeatured": false,
-		"image": "/courses/piano.jpg"
+		"image": "/images/piano.jpg"
 	},
 	{
 		"id": 3,
@@ -37,7 +37,7 @@
 		"price": 129.99,
 		"instructor": "Mike Brown",
 		"isFeatured": false,
-		"image": "/courses/drumming.jpg"
+		"image": "/images/drumming.jpg"
 	},
 	{
 		"id": 5,
@@ -47,7 +47,7 @@
 		"price": 139.99,
 		"instructor": "Chris Davis",
 		"isFeatured": false,
-		"image": "/courses/jazz.jpg"
+		"image": "/images/jazz.jpg"
 	},
 	{
 		"id": 6,
@@ -87,7 +87,7 @@
 		"price": 179.99,
 		"instructor": "Grace Lee",
 		"isFeatured": false,
-		"image": "/courses/classical-music.jpg"
+		"image": "/images/classical.jpg"
 	},
 	{
 		"id": 10,
