@@ -7,7 +7,77 @@
 		"price": 99.99,
 		"instructor": "John Doe",
 		"isFeatured": true,
-		"image": "/images/guitar.jpg"
+		"image": "/images/guitar.jpg",
+		"courseContent": [
+			{
+				"id": 1,
+				"chapter_name": "Introduction to Guitar",
+				"lessons": [
+					"Parts of the Guitar",
+					"Holding the Guitar",
+					"Basic Posture"
+				]
+			},
+			{
+				"id": 2,
+				"chapter_name": "First Chords",
+				"lessons": ["C Major", "G Major", "D Major", "Chord Switching"]
+			},
+			{
+				"id": 3,
+				"chapter_name": "Strumming Basics",
+				"lessons": [
+					"Strumming Patterns",
+					"Downstrokes and Upstrokes",
+					"Keeping Rhythm"
+				]
+			},
+			{
+				"id": 4,
+				"chapter_name": "Beginner Songs",
+				"lessons": [
+					"Twinkle Twinkle",
+					"Happy Birthday",
+					"Simple Pop Song"
+				]
+			},
+			{
+				"id": 5,
+				"chapter_name": "Practice Techniques",
+				"lessons": [
+					"Daily Warmups",
+					"Finger Strengthening",
+					"Smooth Transitions"
+				]
+			},
+			{
+				"id": 6,
+				"chapter_name": "Practice Techniques 2",
+				"lessons": [
+					"Daily Warmups",
+					"Finger Strengthening",
+					"Smooth Transitions"
+				]
+			},
+			{
+				"id": 7,
+				"chapter_name": "Practice Techniques 3",
+				"lessons": [
+					"Daily Warmups",
+					"Finger Strengthening",
+					"Smooth Transitions"
+				]
+			},
+			{
+				"id": 8,
+				"chapter_name": "Practice Techniques 4",
+				"lessons": [
+					"Daily Warmups",
+					"Finger Strengthening",
+					"Smooth Transitions"
+				]
+			}
+		]
 	},
 	{
 		"id": 2,
@@ -17,7 +87,47 @@
 		"price": 109.99,
 		"instructor": "Jane Smith",
 		"isFeatured": false,
-		"image": "/images/piano.jpg"
+		"image": "/images/piano.jpg",
+		"courseContent": [
+			{
+				"id": 1,
+				"chapter_name": "Piano Basics",
+				"lessons": [
+					"Keyboard Layout",
+					"Hand Position",
+					"Finger Numbers"
+				]
+			},
+			{
+				"id": 2,
+				"chapter_name": "Reading Music",
+				"lessons": [
+					"Treble Clef",
+					"Bass Clef",
+					"Notes and Rests",
+					"Basic Rhythms"
+				]
+			},
+			{
+				"id": 3,
+				"chapter_name": "Scales and Chords",
+				"lessons": [
+					"C Major Scale",
+					"G Major Scale",
+					"Triads",
+					"Basic Progressions"
+				]
+			},
+			{
+				"id": 4,
+				"chapter_name": "First Songs",
+				"lessons": [
+					"Mary Had a Little Lamb",
+					"Ode to Joy",
+					"Simple Waltz"
+				]
+			}
+		]
 	},
 	{
 		"id": 3,
@@ -27,7 +137,52 @@
 		"price": 119.99,
 		"instructor": "Emily Johnson",
 		"isFeatured": true,
-		"image": "/images/vocal.jpg"
+		"image": "/images/vocal.jpg",
+		"courseContent": [
+			{
+				"id": 1,
+				"chapter_name": "Breath Control",
+				"lessons": [
+					"Diaphragmatic Breathing",
+					"Breath Support Exercises",
+					"Sustaining Notes"
+				]
+			},
+			{
+				"id": 2,
+				"chapter_name": "Vocal Range Expansion",
+				"lessons": [
+					"Head Voice",
+					"Chest Voice",
+					"Falsetto",
+					"Range Stretching"
+				]
+			},
+			{
+				"id": 3,
+				"chapter_name": "Tone and Resonance",
+				"lessons": [
+					"Vocal Placement",
+					"Resonance Exercises",
+					"Clarity in Singing"
+				]
+			},
+			{
+				"id": 4,
+				"chapter_name": "Performance Techniques",
+				"lessons": [
+					"Stage Presence",
+					"Microphone Use",
+					"Expressive Singing",
+					"Overcoming Stage Fright"
+				]
+			},
+			{
+				"id": 5,
+				"chapter_name": "Stylistic Singing",
+				"lessons": ["Pop Style", "Classical Style", "Jazz Style"]
+			}
+		]
 	},
 	{
 		"id": 4,
@@ -37,7 +192,42 @@
 		"price": 129.99,
 		"instructor": "Mike Brown",
 		"isFeatured": false,
-		"image": "/images/drumming.jpg"
+		"image": "/images/drumming.jpg",
+		"courseContent": [
+			{
+				"id": 1,
+				"chapter_name": "Drum Kit Basics",
+				"lessons": [
+					"Parts of the Drum Kit",
+					"Setting Up the Kit",
+					"Grip and Stance"
+				]
+			},
+			{
+				"id": 2,
+				"chapter_name": "Basic Rhythms",
+				"lessons": ["Single Stroke", "Double Stroke", "Basic Rock Beat"]
+			},
+			{
+				"id": 3,
+				"chapter_name": "Intermediate Grooves",
+				"lessons": ["Shuffle Beat", "Funk Groove", "Syncopation"]
+			},
+			{
+				"id": 4,
+				"chapter_name": "Advanced Techniques",
+				"lessons": ["Ghost Notes", "Polyrhythms", "Odd Time Signatures"]
+			},
+			{
+				"id": 5,
+				"chapter_name": "Playing Songs",
+				"lessons": [
+					"Rock Song Practice",
+					"Pop Song Practice",
+					"Jazz Song Practice"
+				]
+			}
+		]
 	},
 	{
 		"id": 5,
@@ -47,7 +237,41 @@
 		"price": 139.99,
 		"instructor": "Chris Davis",
 		"isFeatured": false,
-		"image": "/images/jazz.jpg"
+		"image": "/images/jazz.jpg",
+		"courseContent": [
+			{
+				"id": 1,
+				"chapter_name": "Introduction to Jazz",
+				"lessons": ["History of Jazz", "Jazz Scales", "Swing Feel"]
+			},
+			{
+				"id": 2,
+				"chapter_name": "Chord Progressions",
+				"lessons": [
+					"II-V-I Progression",
+					"Blues Progression",
+					"Modal Progressions"
+				]
+			},
+			{
+				"id": 3,
+				"chapter_name": "Improvisation Techniques",
+				"lessons": [
+					"Motif Development",
+					"Call and Response",
+					"Improvising over Changes"
+				]
+			},
+			{
+				"id": 4,
+				"chapter_name": "Jazz Standards",
+				"lessons": [
+					"Autumn Leaves",
+					"All the Things You Are",
+					"Blue Monk"
+				]
+			}
+		]
 	},
 	{
 		"id": 6,
@@ -57,7 +281,41 @@
 		"price": 149.99,
 		"instructor": "Alex Wilson",
 		"isFeatured": true,
-		"image": "/images/music-prod.jpg"
+		"image": "/images/music-prod.jpg",
+		"courseContent": [
+			{
+				"id": 1,
+				"chapter_name": "Studio Setup",
+				"lessons": [
+					"DAW Introduction",
+					"Audio Interfaces",
+					"Monitors and Headphones"
+				]
+			},
+			{
+				"id": 2,
+				"chapter_name": "Recording Basics",
+				"lessons": [
+					"Microphone Types",
+					"Recording Vocals",
+					"Recording Instruments"
+				]
+			},
+			{
+				"id": 3,
+				"chapter_name": "Mixing Essentials",
+				"lessons": ["EQ Basics", "Compression", "Reverb and Delay"]
+			},
+			{
+				"id": 4,
+				"chapter_name": "Finalizing a Track",
+				"lessons": [
+					"Mastering Basics",
+					"Exporting",
+					"Preparing for Release"
+				]
+			}
+		]
 	},
 	{
 		"id": 7,
@@ -67,7 +325,46 @@
 		"price": 159.99,
 		"instructor": "Samantha Miller",
 		"isFeatured": true,
-		"image": "/images/songwriting.jpg"
+		"image": "/images/songwriting.jpg",
+		"courseContent": [
+			{
+				"id": 1,
+				"chapter_name": "Song Structure",
+				"lessons": ["Verse", "Chorus", "Bridge"]
+			},
+			{
+				"id": 2,
+				"chapter_name": "Lyrics Writing",
+				"lessons": [
+					"Finding Inspiration",
+					"Rhyme and Meter",
+					"Storytelling"
+				]
+			},
+			{
+				"id": 3,
+				"chapter_name": "Melody Creation",
+				"lessons": ["Hooks", "Phrasing", "Vocal Melodies"]
+			},
+			{
+				"id": 4,
+				"chapter_name": "Harmony and Chords",
+				"lessons": [
+					"Chord Progressions",
+					"Harmonic Tension",
+					"Key Changes"
+				]
+			},
+			{
+				"id": 5,
+				"chapter_name": "Song Refinement",
+				"lessons": [
+					"Editing Lyrics",
+					"Polishing Melodies",
+					"Arrangement Tips"
+				]
+			}
+		]
 	},
 	{
 		"id": 8,
@@ -77,7 +374,46 @@
 		"price": 169.99,
 		"instructor": "Luke Harris",
 		"isFeatured": true,
-		"image": "/images/electronic-music.jpg"
+		"image": "/images/electronic-music.jpg",
+		"courseContent": [
+			{
+				"id": 1,
+				"chapter_name": "Introduction to EDM",
+				"lessons": [
+					"Genres of EDM",
+					"EDM Structure",
+					"Listening Analysis"
+				]
+			},
+			{
+				"id": 2,
+				"chapter_name": "Synth Basics",
+				"lessons": ["Oscillators", "Filters", "Envelopes"]
+			},
+			{
+				"id": 3,
+				"chapter_name": "Beat Making",
+				"lessons": [
+					"Kick and Snare",
+					"Hi-Hats and Percussion",
+					"Drum Patterns"
+				]
+			},
+			{
+				"id": 4,
+				"chapter_name": "Arrangement",
+				"lessons": ["Intro and Build", "Drop", "Breakdown and Outro"]
+			},
+			{
+				"id": 5,
+				"chapter_name": "Mixing EDM",
+				"lessons": [
+					"Sidechain Compression",
+					"EQ in EDM",
+					"Stereo Imaging"
+				]
+			}
+		]
 	},
 	{
 		"id": 9,
@@ -87,7 +423,46 @@
 		"price": 179.99,
 		"instructor": "Grace Lee",
 		"isFeatured": false,
-		"image": "/images/classical.jpg"
+		"image": "/images/classical.jpg",
+		"courseContent": [
+			{
+				"id": 1,
+				"chapter_name": "Early Music",
+				"lessons": ["Medieval Era", "Renaissance Music"]
+			},
+			{
+				"id": 2,
+				"chapter_name": "Baroque Era",
+				"lessons": [
+					"Bach and Handel",
+					"Baroque Style",
+					"Instruments of the Baroque"
+				]
+			},
+			{
+				"id": 3,
+				"chapter_name": "Classical Era",
+				"lessons": [
+					"Mozart and Haydn",
+					"Symphony Development",
+					"Opera in Classical Period"
+				]
+			},
+			{
+				"id": 4,
+				"chapter_name": "Romantic Era",
+				"lessons": [
+					"Beethoven’s Impact",
+					"Romantic Expression",
+					"Nationalism in Music"
+				]
+			},
+			{
+				"id": 5,
+				"chapter_name": "20th Century and Beyond",
+				"lessons": ["Modernism", "Minimalism", "Contemporary Classical"]
+			}
+		]
 	},
 	{
 		"id": 10,
@@ -97,6 +472,53 @@
 		"price": 189.99,
 		"instructor": "Ethan Moore",
 		"isFeatured": true,
-		"image": "/images/blues.jpg"
+		"image": "/images/blues.jpg",
+		"courseContent": [
+			{
+				"id": 1,
+				"chapter_name": "Blues Basics",
+				"lessons": [
+					"12-Bar Blues",
+					"Shuffle Rhythm",
+					"Basic Blues Riffs"
+				]
+			},
+			{
+				"id": 2,
+				"chapter_name": "Blues Scales",
+				"lessons": [
+					"Minor Pentatonic",
+					"Blues Scale",
+					"Scale Positions"
+				]
+			},
+			{
+				"id": 3,
+				"chapter_name": "Improvisation",
+				"lessons": [
+					"Soloing Concepts",
+					"Call and Response",
+					"Phrasing in Blues"
+				]
+			},
+			{
+				"id": 4,
+				"chapter_name": "Slide Guitar",
+				"lessons": [
+					"Slide Techniques",
+					"Open Tunings",
+					"Slide Blues Songs"
+				]
+			},
+			{
+				"id": 5,
+				"chapter_name": "Playing the Masters",
+				"lessons": [
+					"Muddy Waters Style",
+					"B.B. King Style",
+					"Stevie Ray Vaughan Style"
+				]
+			}
+		]
 	}
 ]

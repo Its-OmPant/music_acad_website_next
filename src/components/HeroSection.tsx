@@ -6,12 +6,12 @@ import Link from "next/link";
 
 export default function HeroSection() {
 	return (
-		<div className="w-full min-h-screen flex flex-col py-6 gap-2 justify-center items-center">
+		<div className="w-full min-h-screen flex flex-col py-6 gap-6 justify-center items-center">
 			<div className="w-full h-10"></div>
 			<h3 className="flex items-center gap-2 text-slate-200 md:text-xl lg:text-2xl">
 				We&apos;re <Logo />
 			</h3>
-			<h1 className="font-bold text-2xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+			<h1 className="font-bold text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
 				Master the art of{" "}
 				<span className="text-blue-700 font-extrabold font-serif">
 					Music
