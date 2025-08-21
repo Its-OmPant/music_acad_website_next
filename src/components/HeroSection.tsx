@@ -2,10 +2,11 @@
 import React from "react";
 import { Button } from "./ui/moving-border";
 import Logo from "./Logo";
+import Link from "next/link";
 
 export default function HeroSection() {
 	return (
-		<div className="w-full min-h-full flex flex-col py-6 gap-2 justify-center items-center">
+		<div className="w-full min-h-screen flex flex-col py-6 gap-2 justify-center items-center">
 			<div className="w-full h-10"></div>
 			<h3 className="flex items-center gap-2 text-slate-200 md:text-xl lg:text-2xl">
 				We&apos;re <Logo />
@@ -22,13 +23,15 @@ export default function HeroSection() {
 				to refine your skills, join us to unlock your true potential.
 			</p>
 			<div className="mt-6 sm:mt-10">
-				<Button
-					borderRadius="2rem"
-					className="bg-white dark:bg-black/70 text-black dark:text-white border-neutral-200 dark:border-slate-800"
-					containerClassName="md:w-44 md:h-16"
-				>
-					Explore Courses
-				</Button>
+				<Link href="/courses">
+					<Button
+						borderRadius="2rem"
+						className="bg-white dark:bg-black/70 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+						containerClassName="md:w-44 md:h-16"
+					>
+						Explore Courses
+					</Button>
+				</Link>
 			</div>
 		</div>
 	);

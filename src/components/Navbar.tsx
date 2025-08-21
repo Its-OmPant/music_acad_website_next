@@ -27,10 +27,9 @@ export default function Navbar({ className }: { className?: string }) {
 					<MenuItem
 						setActive={setActive}
 						active={active}
-						item="All Courses"
+						item="Courses"
 					>
 						<div className="flex flex-col space-y-4 text-sm">
-							<HoveredLink href="/hobby">Hobby</HoveredLink>
 							{Categories.map((c, i) => (
 								<HoveredLink href={c.href} key={i}>
 									{c.label}
@@ -38,6 +37,13 @@ export default function Navbar({ className }: { className?: string }) {
 							))}
 						</div>
 					</MenuItem>
+					<Link href="/events">
+						<MenuItem
+							setActive={setActive}
+							active={active}
+							item="Events"
+						></MenuItem>
+					</Link>
 					<Link href="/contact">
 						<MenuItem
 							setActive={setActive}

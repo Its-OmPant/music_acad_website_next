@@ -1,18 +1,22 @@
 [
 	{
-		"label": "Basic Music Theory",
-		"href": "/basic-music-theory"
+		"label": "All Courses",
+		"href": "/courses"
 	},
 	{
-		"label": "Classical Composition",
-		"href": "/classical-composition"
+		"label": "Guitar Fundamentals",
+		"href": "/courses/guitar-fundamentals"
 	},
 	{
-		"label": "Songwriting",
-		"href": "/"
+		"label": "Advanced Vocal Techniques",
+		"href": "/courses/advanced-vocal-techniques"
 	},
 	{
-		"label": "Advance Music Composition",
-		"href": "/basic-music-theory"
+		"label": "Songwriting Essentials",
+		"href": "/courses/songwriting-essentials"
+	},
+	{
+		"label": "Jazz Improvisation",
+		"href": "/courses/jazz-improvisation"
 	}
 ]
