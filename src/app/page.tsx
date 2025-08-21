@@ -2,7 +2,7 @@ import FeaturedCourses from "@/components/FeaturedCourses";
 import HeroSection from "@/components/HeroSection";
 import Testimonials from "@/components/Testimonials";
 import { Spotlight } from "@/components/ui/spotlight-new";
-import { SP } from "next/dist/shared/lib/utils";
+import Webinars from "@/components/Webinars";
 
 export default function Home() {
 	return (
@@ -11,6 +11,7 @@ export default function Home() {
 			<HeroSection />
 			<FeaturedCourses />
 			<Testimonials />
+			<Webinars />
 			<div className="h-80"></div>
 		</main>
 	);
