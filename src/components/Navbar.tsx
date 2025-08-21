@@ -4,33 +4,18 @@ import Categories from "@/data/course-category.json";
 import { HoveredLink, Menu, MenuItem } from "@/components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Logo from "./Logo";
 
 export default function Navbar({ className }: { className?: string }) {
 	const [active, setActive] = useState<string | null>(null);
 
 	return (
-		<div className={cn("fixed top-8 inset-x-0 mx-auto z-50", className)}>
+		<div className={cn("w-screen fixed top-8  mx-auto z-50", className)}>
 			<Menu
 				setActive={setActive}
-				className="flex justify-between mx-4 py-3 px-6 md:max-w-2xl md:mx-auto "
+				className="flex justify-between mx-4 py-3 px-6 md:py-5 md:px-6 md:max-w-2xl md:mx-auto dark:bg-black/85 backdrop-blur-xs"
 			>
-				<div id="logo" className="flex">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						strokeWidth={1.5}
-						stroke="currentColor"
-						className="size-6"
-					>
-						<path
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z"
-						/>
-					</svg>
-					cademy
-				</div>
+				<Logo />
 				<div className="hidden sm:flex gap-6">
 					<Link href="/">
 						<MenuItem
