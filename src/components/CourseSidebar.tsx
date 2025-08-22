@@ -13,9 +13,9 @@ export default function CourseSidebar({ course }: { course: Course }) {
 	return (
 		<div className="w-full p-5">
 			<h3 className="font-bold mb-3">Course Content</h3>
-			<Accordion type="single" collapsible>
+			<Accordion type="multiple">
 				{course.courseContent.map((c: Chapter, idx: number) => (
-					<AccordionItem value="item-1" key={c.id}>
+					<AccordionItem value={`item-${c.id}`} key={c.id}>
 						<AccordionTrigger>{`${idx + 1} ${
 							c.chapter_name
 						}`}</AccordionTrigger>
@@ -31,15 +31,4 @@ export default function CourseSidebar({ course }: { course: Course }) {
 			</Accordion>
 		</div>
 	);
-}
-
-{
-	/* <Accordion type="single" collapsible>
-				<AccordionItem value="item-1">
-					<AccordionTrigger>Is it accessible?</AccordionTrigger>
-					<AccordionContent>
-						Yes. It adheres to the WAI-ARIA design pattern.
-					</AccordionContent>
-				</AccordionItem>
-			</Accordion> */
 }
