@@ -7,7 +7,7 @@ import CoursePlayer from "@/components/CoursePlayer";
 import { Course } from "@/types/Course";
 import { notFound } from "next/navigation";
 
-export default function CoursePage({ slug }) {
+export default function CoursePage({ slug }: { slug: string }) {
 	const course: Course | undefined = courses.find((c) => c.slug === slug);
 
 	if (!course) {
