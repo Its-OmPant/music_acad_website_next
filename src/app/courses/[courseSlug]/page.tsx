@@ -8,8 +8,8 @@ type PageProps = {
 	};
 };
 
-async function page({ params }: PageProps) {
-	const { courseSlug } = await params;
+function page({ params }: PageProps) {
+	const { courseSlug } = params;
 
 	return <CoursePage slug={courseSlug} />;
 }
