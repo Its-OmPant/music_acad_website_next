@@ -1,7 +1,7 @@
 "use client";
 
 // Core component that receives mouse positions and renders pointer and content
-// import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 import { motion, AnimatePresence, useMotionValue } from "motion/react";
 import { cn } from "@/lib/utils";
@@ -16,7 +16,7 @@ export const FollowerPointerCard = ({
 }) => {
 	const x = useMotionValue(0);
 	const y = useMotionValue(0);
-	const ref = React.useRef<HTMLDivElement>(null);
+	const ref = useRef<HTMLDivElement>(null);
 	const [rect, setRect] = useState<DOMRect | null>(null);
 	const [isInside, setIsInside] = useState<boolean>(false); // Add this line
 
