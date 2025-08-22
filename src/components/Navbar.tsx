@@ -6,6 +6,19 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Logo from "./Logo";
 
+import {
+	Drawer,
+	DrawerClose,
+	DrawerContent,
+	DrawerTrigger,
+} from "@/components/ui/drawer";
+import {
+	Accordion,
+	AccordionContent,
+	AccordionItem,
+	AccordionTrigger,
+} from "@/components/ui/accordion";
+
 export default function Navbar({ className }: { className?: string }) {
 	const [active, setActive] = useState<string | null>(null);
 
@@ -53,20 +66,84 @@ export default function Navbar({ className }: { className?: string }) {
 					</Link>
 				</div>
 				<div className="sm:hidden">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						strokeWidth={1.5}
-						stroke="currentColor"
-						className="size-6"
-					>
-						<path
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
-						/>
-					</svg>
+					<Drawer direction="right">
+						<DrawerTrigger>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								strokeWidth={1.5}
+								stroke="currentColor"
+								className="size-6"
+							>
+								<path
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+								/>
+							</svg>
+						</DrawerTrigger>
+						<DrawerContent className="px-6 py-5 !w-[250px]">
+							<div className="flex justify-between my-3">
+								<Logo />
+								<DrawerClose>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										strokeWidth="2"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										className="lucide lucide-chevrons-right-icon lucide-chevrons-right"
+									>
+										<path d="m6 17 5-5-5-5" />
+										<path d="m13 17 5-5-5-5" />
+									</svg>
+								</DrawerClose>
+							</div>
+							<div className="my-4 px-3 flex flex-col gap-4">
+								<Link href="/">
+									<DrawerClose className="w-full flex">
+										Home
+									</DrawerClose>
+								</Link>
+								<Accordion type="single" collapsible>
+									<AccordionItem value="courses">
+										<AccordionTrigger>
+											Courses
+										</AccordionTrigger>
+										<AccordionContent>
+											{Categories.map((c, i) => (
+												<div
+													className="my-4 px-3"
+													key={i}
+												>
+													<Link href={c.href}>
+														<DrawerClose className="w-full text-left">
+															{c.label}
+														</DrawerClose>
+													</Link>
+												</div>
+											))}
+										</AccordionContent>
+									</AccordionItem>
+								</Accordion>
+								<Link href="/events">
+									<DrawerClose className="w-full flex">
+										Events
+									</DrawerClose>
+								</Link>
+								<Link href="/contact">
+									<DrawerClose className="w-full flex">
+										Contact Us
+									</DrawerClose>
+								</Link>
+							</div>
+						</DrawerContent>
+					</Drawer>
 				</div>
 			</Menu>
 		</div>
