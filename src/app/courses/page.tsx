@@ -1,3 +1,5 @@
+"use client";
+
 import AllCourses from "@/components/AllCourses";
 
 export default function page() {

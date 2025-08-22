@@ -1,6 +1,8 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
-import { Course, Chapter } from "@/types/Course";
+import { Course } from "@/types/Course";
 
 export default function CoursePlayer({ course }: { course: Course }) {
 	return (

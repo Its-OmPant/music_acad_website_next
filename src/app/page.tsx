@@ -1,3 +1,5 @@
+"use client";
+
 import FeaturedCourses from "@/components/FeaturedCourses";
 import HeroSection from "@/components/HeroSection";
 import Instructors from "@/components/Instructors";

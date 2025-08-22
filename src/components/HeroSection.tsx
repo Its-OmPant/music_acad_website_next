@@ -1,6 +1,6 @@
 "use client";
+
 import React from "react";
-import { Button } from "./ui/moving-border";
 import Logo from "./Logo";
 import Link from "next/link";
 
@@ -24,13 +24,9 @@ export default function HeroSection() {
 			</p>
 			<div className="mt-6 sm:mt-10">
 				<Link href="/courses">
-					<Button
-						borderRadius="2rem"
-						className="bg-white dark:bg-black/70 text-black dark:text-white border-neutral-200 dark:border-slate-800"
-						containerClassName="md:w-44 md:h-16"
-					>
+					<button className="bg-white dark:bg-slate-900 text-sm sm:text-md px-6 py-4 text-black dark:text-white rounded-md">
 						Explore Courses
-					</Button>
+					</button>
 				</Link>
 			</div>
 		</div>

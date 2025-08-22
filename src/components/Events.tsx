@@ -1,5 +1,7 @@
+"use client";
+
 import React from "react";
-import { FollowerPointerCard, FollowPointer } from "./ui/following-pointer";
+import { FollowerPointerCard } from "./ui/following-pointer";
 import AllEvents from "@/data/webinars.json";
 import Image from "next/image";
 
@@ -11,7 +13,7 @@ export default function Events() {
 			</h3>
 			<div className="grid p-4 grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 				{AllEvents.map((e) => (
-					<FollowerPointerCard key={e.id} title="">
+					<FollowerPointerCard key={e.id}>
 						<div className="group relative h-full overflow-hidden rounded-2xl border border-zinc-100 bg-white dark:bg-slate-900 transition duration-200 hover:shadow-xl">
 							<div className="relative aspect-[16/10] w-full overflow-hidden rounded-tl-lg rounded-tr-lg bg-gray-100">
 								<Image
@@ -45,13 +47,3 @@ export default function Events() {
 		</div>
 	);
 }
-
-const blogContent = {
-	slug: "amazing-tailwindcss-grid-layouts",
-	author: "Manu Arora",
-	date: "28th March, 2023",
-	title: "Amazing Tailwindcss Grid Layout Examples",
-	description:
-		"Grids are cool, but Tailwindcss grids are cooler. In this article, we will learn how to create amazing Grid layouts with Tailwindcs grid and React.",
-	image: "/images/blues.jpg",
-};

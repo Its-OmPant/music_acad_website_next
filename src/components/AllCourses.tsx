@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { CometCard } from "./ui/comet-card";
 import Image from "next/image";

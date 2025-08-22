@@ -1,6 +1,7 @@
-// Core component that receives mouse positions and renders pointer and content
 "use client";
-import React, { useEffect, useState } from "react";
+
+// Core component that receives mouse positions and renders pointer and content
+// import React, { useEffect, useState } from "react";
 
 import { motion, AnimatePresence, useMotionValue } from "motion/react";
 import { cn } from "@/lib/utils";
@@ -9,11 +10,9 @@ import type { MotionValue } from "motion/react";
 export const FollowerPointerCard = ({
 	children,
 	className,
-	title,
 }: {
 	children: React.ReactNode;
 	className?: string;
-	title?: string | React.ReactNode;
 }) => {
 	const x = useMotionValue(0);
 	const y = useMotionValue(0);
@@ -54,31 +53,14 @@ export const FollowerPointerCard = ({
 			className={cn("relative", className)}
 		>
 			<AnimatePresence>
-				{isInside && <FollowPointer x={x} y={y} title={title} />}
+				{isInside && <FollowPointer x={x} y={y} />}
 			</AnimatePresence>
 			{children}
 		</div>
 	);
 };
 
-export const FollowPointer = ({
-	x,
-	y,
-	title,
-}: {
-	x: MotionValue;
-	y: MotionValue;
-	title?: string | React.ReactNode;
-}) => {
-	const colors = [
-		"#0ea5e9",
-		"#737373",
-		"#14b8a6",
-		"#22c55e",
-		"#3b82f6",
-		"#ef4444",
-		"#eab308",
-	];
+export const FollowPointer = ({ x, y }: { x: MotionValue; y: MotionValue }) => {
 	return (
 		<motion.div
 			className="absolute z-50 h-4 w-4 rounded-full"
