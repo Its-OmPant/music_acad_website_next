@@ -2,13 +2,7 @@ import React from "react";
 import courses from "@/data/courses.json";
 import CoursePage from "@/components/CoursePage";
 
-type PageProps = {
-	params: {
-		courseSlug: string;
-	};
-};
-
-function page({ params }: PageProps) {
+function page({ params }) {
 	const { courseSlug } = params;
 
 	return <CoursePage slug={courseSlug} />;
