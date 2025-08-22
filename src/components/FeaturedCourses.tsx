@@ -5,6 +5,7 @@ import React from "react";
 import { BackgroundGradient } from "./ui/background-gradient";
 import AllCourses from "@/data/courses.json";
 import Image from "next/image";
+import config from "../../next.config";
 
 interface Course {
 	id: number;
@@ -20,7 +21,12 @@ interface Course {
 export default function FeaturedCourses() {
 	const featuredCourses: Course[] = AllCourses.filter(
 		(c: Course) => c.isFeatured
-	);
+	).map((c) => {
+		const imgSrc =
+			config.basePath != "" ? `${config.basePath}${c.image}` : c.image;
+		return { ...c, image: imgSrc };
+	});
+
 	return (
 		<div className="w-full min-h-full py-6 bg-slate-900">
 			<div className="w-full flex flex-col justify-center items-center">

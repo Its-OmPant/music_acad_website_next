@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Categories from "@/data/course-category.json";
-import { HoveredLink, Menu, MenuItem } from "@/components/ui/navbar-menu";
+import { Menu, MenuItem } from "@/components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Logo from "./Logo";
@@ -44,9 +44,13 @@ export default function Navbar({ className }: { className?: string }) {
 					>
 						<div className="flex flex-col space-y-4 text-sm">
 							{Categories.map((c, i) => (
-								<HoveredLink href={c.href} key={i}>
+								<Link
+									href={c.href}
+									key={i}
+									className="text-while hover:text-white/80"
+								>
 									{c.label}
-								</HoveredLink>
+								</Link>
 							))}
 						</div>
 					</MenuItem>

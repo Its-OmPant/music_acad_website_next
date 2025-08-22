@@ -6,6 +6,7 @@ import CourseSidebar from "@/components/CourseSidebar";
 import CoursePlayer from "@/components/CoursePlayer";
 import { Course } from "@/types/Course";
 import { notFound } from "next/navigation";
+import config from "../../next.config";
 
 export default function CoursePage({ slug }: { slug: string }) {
 	const course: Course | undefined = courses.find((c) => c.slug === slug);
@@ -13,6 +14,8 @@ export default function CoursePage({ slug }: { slug: string }) {
 	if (!course) {
 		return notFound();
 	}
+
+	course.image = config.basePath + course.image;
 
 	return (
 		<div className="w-full min-h-screen pt-20 md:pt-28">

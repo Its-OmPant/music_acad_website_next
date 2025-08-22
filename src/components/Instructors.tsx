@@ -2,10 +2,17 @@
 import React from "react";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
 import { AnimatedTestimonials } from "./ui/animated-testimonials";
-import faculties from "@/data/faculties.json";
+import FacultyData from "@/data/faculties.json";
 import { cn } from "@/lib/utils";
+import config from "../../next.config";
 
 export default function Instructors() {
+	const faculties = FacultyData.map((c) => {
+		const imgSrc =
+			config.basePath != "" ? `${config.basePath}${c.image}` : c.image;
+		return { ...c, image: imgSrc };
+	});
+
 	return (
 		<div className="relative flex w-full items-center justify-center bg-white dark:bg-black">
 			<div

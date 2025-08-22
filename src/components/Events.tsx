@@ -2,10 +2,16 @@
 
 import React from "react";
 import { FollowerPointerCard } from "./ui/following-pointer";
-import AllEvents from "@/data/webinars.json";
+import EventsData from "@/data/webinars.json";
 import Image from "next/image";
+import config from "../../next.config";
 
 export default function Events() {
+	const AllEvents = EventsData.map((c) => {
+		const imgSrc =
+			config.basePath != "" ? `${config.basePath}${c.image}` : c.image;
+		return { ...c, image: imgSrc };
+	});
 	return (
 		<div className="w-full h-full px-10 py-6">
 			<h3 className="text-2xl sm:text-3xl md:text-4xl font-bold my-3 lg:my-7 text-center">

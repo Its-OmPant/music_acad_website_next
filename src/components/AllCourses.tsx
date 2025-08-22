@@ -3,10 +3,16 @@
 import React from "react";
 import { CometCard } from "./ui/comet-card";
 import Image from "next/image";
-import courses from "@/data/courses.json";
+import CourseData from "@/data/courses.json";
 import Link from "next/link";
+import config from "../../next.config";
 
 function AllCourses() {
+	const courses = CourseData.map((c) => {
+		const imgSrc =
+			config.basePath != "" ? `${config.basePath}${c.image}` : c.image;
+		return { ...c, image: imgSrc };
+	});
 	return (
 		<div className="w-full h-full py-12">
 			<h1 className="text-2xl text-center font-bold">All Courses (10)</h1>
