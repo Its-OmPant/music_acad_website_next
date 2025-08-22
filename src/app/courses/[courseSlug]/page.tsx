@@ -2,15 +2,12 @@ import React from "react";
 import courses from "@/data/courses.json";
 import CoursePage from "@/components/CoursePage";
 
-type PageProps = {
-	params: {
-		courseSlug: string;
-	};
-	searchParams?: { [key: string]: string | string[] | undefined };
-};
+interface PageProps {
+	params: Promise<{ courseSlug: string }>;
+}
 
-export default function Page({ params }: PageProps) {
-	const { courseSlug } = params;
+export default async function Page({ params }: PageProps) {
+	const { courseSlug } = await params;
 	return <CoursePage slug={courseSlug} />;
 }
 
